@@ -7,21 +7,22 @@ html {
 }
 
 .container {
-    background-color: rgb(175, 172, 172);
+    background-color: rgb(235 235 235);
+    padding: 2px;
     width: 60%;
-    height: 100vh;
     margin: auto;
 }
 
 h2 {
     margin: 2px;
+    
 }
 
 .top {
     text-align: center;
-    padding: 10px;
     color: white;
-    background-color: black;
+    padding: 10px;
+    background-color: #29abe2;
     margin-bottom: 10px;
 
 }
@@ -36,6 +37,8 @@ p {
     margin: 5px 2px;
     padding: 2px;
     background-color: white;
+    border-bottom: 2px solid #29abe2;
+    box-shadow: -1px 2px 3px #a48989;
 
 }
 
@@ -44,10 +47,11 @@ p {
     padding: 1px;
     margin: 0px;
     color: white;
-    background-color: rgb(156, 20, 20);
+    background-color: #29abe2
 }
 
 .note-summary {
+    font-size: 14px;
     background-color: white;
     margin: 0px;
 }
@@ -57,12 +61,13 @@ p {
 }
 
 code {
+    display: block;
     font-family: Consolas,"courier new";
     color: crimson;
     background-color: #f1f1f1;
     margin: 2px;
     padding: 2px;
-    font-size: 0.8rem;
+    font-size: 10px;
   }
 
   .target-code {
