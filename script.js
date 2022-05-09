@@ -6,10 +6,10 @@ const container = document.querySelector(".container");
 let notes = [
     {
         title: "Array.filter",
-        summary: "Filter an array for elements that pass a test",
+        summary: "Filter an array for elements that pass a test (from a function)",
         points: ["this is point one", "point two"],
         code: {
-            line1: "Aconst ages = [10,15,67,40,23];",
+            line1: "const ages = [10,15,67,40,23];",
             line2: "ages.filter(age => age =<15);",
             line3: "result: [15,67,40,23]",
         },
@@ -19,19 +19,25 @@ let notes = [
         summary: "Runs a function on each element of array and returns the result in a new array",
         points: ["this is point one", "point two"],
         code: {
-            line1: "Bconst ages = [10,15,67,40,23];",
-            line2: "ages.filter(age => age =<15);",
-            line3: "result: [15,67,40,23]",
+            line1: "const array1 = [1, 4, 9, 16];",
+            line2: "const map1 = array1.map(x => x * 2);",
+            line3: "result: [2, 8, 18, 32]",
         },
     },
     {
-        title: "Array.filter3",
-        summary: "Filter an array for elements that pass a test",
+        title: "Array.sort",
+        summary: "Sort an array by Unicode (!important)",
         points: ["this is point one", "point two"],
         code: {
-            line1: "Cconst ages = [10,15,67,40,23];",
-            line2: "ages.filter(age => age =<15);",
-            line3: "result: [15,67,40,23]",
+            line1: "TO SORT AN ARRAY IN ALPHABETICAL ORDER:",
+            line2: "const months = ['March', 'Jan', 'Feb', 'Dec'];",
+            line3: "months.sort();",
+            line4: "result: ['Dec', 'Feb', 'Jan', 'March']",
+            line5: "--------------------------",
+            line7: "TO SORT IN NUMERICAL ORDER:",
+            line8: "const numbers = [4, 2, 5, 1, 3];",
+            line9: "numbers.sort(function(a, b) {return a - b;});",
+            line10: "result: [1, 2, 3, 4, 5]",
         },
     }
 

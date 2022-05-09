@@ -1,6 +1,7 @@
 html {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/dd/Code_presentation_background.png);
     background-size: cover;
+    /*Dereckson, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons*/
 }
 
 body,
@@ -19,11 +20,11 @@ html {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5vw;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 4vw;
     margin: 2px;
     
 }
@@ -61,7 +62,7 @@ p {
 }
 
 .note-summary {
-    font-size: 1.5rem;
+    font-size: 2vw;
     background-color: white;
     margin: 0px;
 }
@@ -73,7 +74,7 @@ p {
 code {
     display: block;
     font-family: Consolas,"courier new";
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     color: crimson;
     background-color: #f1f1f1;
     margin: 2px;
