@@ -17,16 +17,16 @@ html {
     padding: 2px;
     width: 60%;
     margin: auto;
+    min-width: 400px;
 }
 
-h1 {
-    font-size: 5vw;
+a {
+    margin: 3px;
 }
 
 h2 {
-    font-size: 4vw;
-    margin: 2px;
-    
+    margin: 0px;
+    padding: 3px;
 }
 
 .top {
@@ -41,7 +41,7 @@ h2 {
 #logo, 
 p {
     margin: 0px;
-
+    padding: 3px;
 }
 
 .note {
@@ -62,7 +62,6 @@ p {
 }
 
 .note-summary {
-    font-size: 2vw;
     background-color: white;
     margin: 0px;
 }
@@ -74,7 +73,6 @@ p {
 code {
     display: block;
     font-family: Consolas,"courier new";
-    font-size: 1.5vw;
     color: crimson;
     background-color: #f1f1f1;
     margin: 2px;

@@ -1,6 +1,18 @@
 const container = document.querySelector(".container");
 
-
+/* 
+{
+    
+            title: 
+                    summary: 
+                    points: 
+                    code: {
+                        line1: 
+                        line2: 
+                        line3: 
+        },
+    }
+*/
 
 
 let notes = [
@@ -13,6 +25,12 @@ let notes = [
             line2: "ages.filter(age => age =<15);",
             line3: "result: [15,67,40,23]",
         },
+        links: {
+            mdnLink: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
+            w3Link: "https://www.w3schools.com/jsref/jsref_filter.asp",
+        },
+
+
     },
     {
         title: "Array.map",
@@ -23,6 +41,11 @@ let notes = [
             line2: "const map1 = array1.map(x => x * 2);",
             line3: "result: [2, 8, 18, 32]",
         },
+        links: {
+            mdnLink: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
+            w3Link: "https://www.w3schools.com/jsref/jsref_map.asp",
+        },
+
     },
     {
         title: "Array.sort",
@@ -39,7 +62,29 @@ let notes = [
             line9: "numbers.sort(function(a, b) {return a - b;});",
             line10: "result: [1, 2, 3, 4, 5]",
         },
-    }
+        links: {
+            mdnLink: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
+            w3Link: "https://www.w3schools.com/js/js_array_sort.asp",
+        },
+
+    },
+    {
+
+        title: "Array.reduce",
+        summary: "return a single value from exceuting a function on each element in an array.",
+        points: "",
+        code: {
+            line1: "let total = [ 0, 1, 2, 3 ].reduce( ( previousValue, currentValue ) => ",
+            line2: "previousValue + currentValue, 0",
+            line3: ")",
+            line4: "result: 6"
+        },
+        links: {
+            mdnLink: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce",
+            w3Link: "https://www.w3schools.com/jsref/jsref_reduce.asp",
+        },
+
+    },
 
 ]
 
@@ -72,7 +117,18 @@ const noteMaker = function (obj) {
 
     }
 
-    
+    const linkM = document.createElement("a");
+    const linkW = document.createElement("a");
+    linkM.textContent = "MDM";
+    linkW.textContent = "W3";
+    linkM.href = obj.links.mdnLink;
+    linkM.target = "_blank",
+    linkW.href = obj.links.w3Link;
+    linkW.target = "_blank",
+    noteDiv.appendChild(linkM);
+    noteDiv.appendChild(linkW);
+
+
     container.appendChild(noteDiv);
     //should create loop or map to insert code lines
 
